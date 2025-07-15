@@ -10,7 +10,6 @@ public class ProjetoAcademiaSpringApplication extends SpringBootServletInitializ
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		// Aqui passamos a classe principal do projeto como fonte de configuração
 		return builder.sources(ProjetoAcademiaSpringApplication.class);
 	}
 
