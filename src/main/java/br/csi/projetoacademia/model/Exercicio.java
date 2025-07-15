@@ -20,6 +20,6 @@ public class Exercicio{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id_exercicio;
     private String nome_exercicio;
-    private String grupoMuscular;
+    private String grupomuscular_exercicio;
     private String descricao_exercicio;
 }

@@ -20,5 +20,5 @@ public class Ficha {
     private int id_ficha;
     private String tipo;
     private String objetivo;
-    private String id_usuario;
+    private int id_usuario;
 }
