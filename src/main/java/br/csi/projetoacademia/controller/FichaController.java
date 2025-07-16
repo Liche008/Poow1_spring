@@ -62,7 +62,7 @@ public class FichaController {
         if (session.getAttribute("usuarioLogado") == null) {
             return "redirect:/login";
         }
-        ficha.setId_ficha(id);
+        ficha.setIdFicha(id);
         fichaService.salvar(ficha);
         return "redirect:/fichas";
     }

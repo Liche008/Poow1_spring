@@ -29,7 +29,7 @@ public class LoginController {
         String senha = request.getParameter("senha");
 
         Optional<Usuario> usuarioOpt = usuarioService.listarTodos().stream()
-                .filter(u -> u.getEmail_usuario().equals(email) && u.getSenha_usuario().equals(senha))
+                .filter(u -> u.getEmailUsuario().equals(email) && u.getSenhaUsuario().equals(senha))
                 .findFirst();
 
         if (usuarioOpt.isPresent()) {

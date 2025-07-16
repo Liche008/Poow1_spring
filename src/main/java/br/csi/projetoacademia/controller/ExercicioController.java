@@ -62,7 +62,7 @@ public class ExercicioController {
         if (session.getAttribute("usuarioLogado") == null) {
             return "redirect:/login";
         }
-        exercicio.setId_exercicio(id);
+        exercicio.setIdExercicio(id);
         exercicioService.salvar(exercicio);
         return "redirect:/exercicios";
     }

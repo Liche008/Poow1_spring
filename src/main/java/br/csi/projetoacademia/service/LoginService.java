@@ -17,14 +17,14 @@ public class LoginService {
         Optional<Usuario> usuarioOpt = usuarioRepository.findByEmailUsuario(email);
         if (usuarioOpt.isPresent()) {
             Usuario usuario = usuarioOpt.get();
-            return usuario.getSenha_usuario().equals(senha);
+            return usuario.getSenhaUsuario().equals(senha);
         }
         return false;
     }
 
     public Optional<Usuario> autenticar(String email, String senha) {
         Optional<Usuario> usuarioOpt = usuarioRepository.findByEmailUsuario(email);
-        if (usuarioOpt.isPresent() && usuarioOpt.get().getSenha_usuario().equals(senha)) {
+        if (usuarioOpt.isPresent() && usuarioOpt.get().getSenhaUsuario().equals(senha)) {
             return usuarioOpt;
         }
         return Optional.empty();

@@ -59,7 +59,7 @@ public class UsuarioController {
         if (session.getAttribute("usuarioLogado") == null) {
             return "redirect:/login";
         }
-        usuario.setId_usuario(id);
+        usuario.setIdUsuario(id);
         usuarioService.salvar(usuario);
         return "redirect:/usuarios";
     }
